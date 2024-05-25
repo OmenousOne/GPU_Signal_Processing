@@ -1,0 +1,50 @@
+Run:
+	gpu_signal_processing.exe ../data/Line_001_IEEE_Float_BE.sgy output4.sgy 2 50 > run4.log
+
+Log:
+
+ARCHITECTURE -> little endian (0)
+Input File: ../data/Line_001_IEEE_Float_BE.sgy
+Output File: output4.sgy
+Multiplier: 2
+Simultaneous Traces: 50
+
+Open for read: ../data/Line_001_IEEE_Float_BE.sgy
+EBCDIC Header Read 3200 Bytes
+Binary Header Read 400 Bytes
+Ebcdic Header: EBCDIC
+Revision < 2.0 Detected
+Binary Header: IBM ORDER
+Num Traces:      -31073 (FFFF869F)  bytes 3213-3214
+Num Aux Tr:         0 (0000)  bytes 3215-3216
+Sample Interval: 2000 (07D0)  bytes 3217-3218
+Num Samples:     1501 (05DD)  bytes 3221-3222
+Revision:  ( 0)     0 (0000)  bytes 3297-3300
+Format:             6 (0006)  bytes 3225-3226
+
+Calculated Number of Traces:          71284
+Data Byte Swap Required
+Open for write: output4.sgy
+
+First 8 data samples for QC:
+Input 0: 4.49441051
+Input 1: 6.59748077
+Input 2: 1.05115414
+Input 3: -5.72130013
+Input 4: -5.60891533
+Input 5: 1.45248413
+Input 6: 7.15355396
+Input 7: 4.57948112
+
+Output 0: 8.98882103
+Output 1: 13.19496155
+Output 2: 2.10230827
+Output 3: -11.44260025
+Output 4: -11.21783066
+Output 5: 2.90496826
+Output 6: 14.30710793
+Output 7: 9.15896225
+
+Total Traces Processed: 71284
+Total Samples Processed (float numbers): 106997284
+Elapsed Time: 3835347 microseconds

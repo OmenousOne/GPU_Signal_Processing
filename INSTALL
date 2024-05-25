@@ -1,0 +1,9 @@
+Installing the program
+
+- running: make install, will place the built executable into the main project directory in the bin/ directory
+
+- the program maybe run from the bin/ directory or copied to a location that is in your PATH environment
+
+- running the program with no arguments will show it's usage information
+
+

@@ -1,0 +1,14 @@
+IDIR=./
+COMPILER=nvcc
+COMPILER_FLAGS=-I$(IDIR) -I/usr/local/cuda/include -lcuda -lcudart -lnppc -lnpps  --std c++17
+
+.PHONY: clean build run
+
+build: gpu_signal_processing.cu endian.cpp bswaps.cpp bswapl.cpp bswapf.cpp
+	$(COMPILER) $(COMPILER_FLAGS) gpu_signal_processing.cu endian.cpp bswaps.cpp bswapl.cpp bswapf.cpp -o gpu_signal_processing.exe -Wno-deprecated-gpu-targets
+
+clean:
+	rm -f gpu_signal_processing.exe
+
+all: clean build 
+
